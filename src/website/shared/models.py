@@ -319,6 +319,14 @@ class NixChannelResult(models.Model):
     result = models.FileField()
 
 
+class NixStoreHash(models.Model):
+    """The path of a Nix package at a certain revision."""
+
+    package = models.ForeignKey(NixPackage, on_delete=models.CASCADE)
+    source = models.ForeignKey(NixChannelResult, on_delete=models.CASCADE)
+    out_path = models.CharField(max_length=256)
+
+
 class NixIssue(models.Model):
     """The Nixpkgs version of a cve."""
 
