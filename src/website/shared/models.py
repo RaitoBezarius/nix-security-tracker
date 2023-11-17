@@ -255,6 +255,21 @@ class Container(models.Model):
 
 ###
 #
+# Internal models
+#
+###
+
+
+class CveIngestion(models.Model):
+    """Class representing an ingestion of CVE data."""
+
+    timestamp = models.DateTimeField(auto_now_add=True)
+    valid_to = models.DateField()
+    delta = models.BooleanField(default=True)
+
+
+###
+#
 # Nix related models
 #
 ##
