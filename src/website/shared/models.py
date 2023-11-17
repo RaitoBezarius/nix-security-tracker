@@ -46,7 +46,7 @@ class CveRecord(models.Model):
 
     local_timestamp = models.DateTimeField(auto_now_add=True)
 
-    triaged = models.BooleanField(default=True)
+    triaged = models.BooleanField(default=False)
 
     @cached_property
     def cna(self) -> "Container":

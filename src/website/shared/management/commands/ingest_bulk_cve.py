@@ -74,7 +74,7 @@ class Command(BaseCommand):
 
                 for j_cve in cve_list:
                     with open(j_cve) as fc:
-                        mkCve(json.load(fc))
+                        mkCve(json.load(fc), triaged=True)
 
         # Record the ingestion
         v_date = release.tag_name.split("_")[1]

@@ -244,9 +244,12 @@ def mkContainer(
 
 
 def mkCve(
-    data: Dict[str, Any], record: Optional[models.CveRecord] = None
+    data: Dict[str, Any],
+    record: Optional[models.CveRecord] = None,
+    triaged: bool = False,
 ) -> models.CveRecord:
     cve = mkCveRecord(data["cveMetadata"], cve=record)
+    cve.triaged = triaged
     cve.save()
 
     if record is not None:
