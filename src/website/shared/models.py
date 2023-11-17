@@ -2,6 +2,7 @@ from typing import Type
 
 from django.core.validators import RegexValidator
 from django.db import models
+from django.utils.functional import cached_property
 from django.utils.translation import gettext_lazy as _
 
 
@@ -46,6 +47,10 @@ class CveRecord(models.Model):
     local_timestamp = models.DateTimeField(auto_now_add=True)
 
     triaged = models.BooleanField(default=True)
+
+    @cached_property
+    def cna(self) -> "Container":
+        return self.container_set.get(_type="cna")  # type: ignore
 
     class Meta:
         indexes = [models.Index(fields=["cve_id"])]
