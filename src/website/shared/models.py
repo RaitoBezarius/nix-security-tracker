@@ -45,6 +45,11 @@ class CveRecord(models.Model):
 
     local_timestamp = models.DateTimeField(auto_now_add=True)
 
+    triaged = models.BooleanField(default=True)
+
+    class Meta:
+        indexes = [models.Index(fields=["cve_id"])]
+
 
 class Product(models.Model):
     vendor = models.CharField(max_length=512)
