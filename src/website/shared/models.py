@@ -285,6 +285,40 @@ class CveIngestion(models.Model):
 ##
 
 
+class NixChannel(models.Model):
+    """A Nix channel"""
+
+    name = models.CharField(max_length=256)
+    supported = models.BooleanField(default=True)
+
+
+class NixMaintainer(models.Model):
+    """A maintainer of certain packages."""
+
+    name = models.CharField(max_length=128)
+    email = models.EmailField()
+
+
+class NixPackage(models.Model):
+    """Nixpkgs' version of a product"""
+
+    name = models.CharField(max_length=128)
+    description = models.CharField(max_length=128)
+    long_description = models.TextField()
+    homepage = models.CharField(max_length=1024)
+    license = models.CharField(max_length=128)
+    maintainers = models.ManyToManyField(NixMaintainer)
+    channel = models.ForeignKey(NixChannel, on_delete=models.CASCADE)
+
+
+class NixChannelResult(models.Model):
+    """The result of an evaluation of a Nix channel."""
+
+    hash = models.CharField(max_length=40)
+    channel = models.ForeignKey(NixChannel, on_delete=models.CASCADE)
+    result = models.FileField()
+
+
 class NixIssue(models.Model):
     """The Nixpkgs version of a cve."""
 
@@ -302,6 +336,7 @@ class NixIssue(models.Model):
         choices=IssueStatus.choices,
         default=IssueStatus.UNKNOWN,
     )
+    affected_packages = models.ManyToManyField(NixPackage)
 
 
 class NixEvent(models.Model):
