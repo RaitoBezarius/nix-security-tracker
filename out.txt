@@ -1,0 +1,30 @@
+Taking inventory runtime dependencies...
+Ingesting advisories...
+~/d/nix-security-tracker/CVE ~/d/nix-security-tracker
+Already up to date.
+~/d/nix-security-tracker
+231458
+[CVE] Parsing 231458 files
+[CVE] Done parsing
+[CVE] Time to run: 6.274006962s
+Matched advisories:
+"avahi"	"/nix/store/08xh2gdj9ji94fcjpf2hpz42jim99kkp-avahi-0.8.drv"	"CVE-2023-38473"
+Nothing
+"gawk"	"/nix/store/jzc31i1d1mi6x2rmp9pj6dcvw2mx7daz-gawk-5.2.2.drv"	"CVE-2023-4156"
+Nothing
+"glib"	"/nix/store/09yqd7yg7rfjsfbikvc3snx7wn9c6is5-glib-2.76.4.drv"	"CVE-2023-29499"
+Nothing
+"glibc"	"/nix/store/30j4y2k04zww68mggx1mkmmi6b9ns2yp-glibc-2.38-27.drv"	"CVE-2023-5156"
+Nothing
+"glibc"	"/nix/store/3affpfhnsgifgqkhd1zckk527a86fyrz-glibc-locales-2.38-27.drv"	"CVE-2023-5156"
+Nothing
+"kernel"	"/nix/store/h3sqgjbm7a3gvyn50r5k7066xjhgn5iy-kernel-modules.drv"	"CVE-2023-6238"
+Nothing
+"libX11"	"/nix/store/wxd38000dmzrd51nl4d0q88c3xximhlr-libX11-1.8.7.drv"	"CVE-2023-43787"
+Nothing
+"libXpm"	"/nix/store/a66y6hxcv8qcal43i49nvrzfi7k9jj12-libXpm-3.5.17.drv"	"CVE-2023-43789"
+Nothing
+"libtiff"	"/nix/store/c80az5882p200wyi9vk5jkbrqf8wi2q1-libtiff-4.6.0.drv"	"CVE-2023-41175"
+Nothing
+"w3m"	"/nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv"	"CVE-2023-38253"
+Nothing
