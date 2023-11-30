@@ -10,6 +10,9 @@ import CVENix.NVD
 
 import Data.Maybe
 import Data.Char (isDigit)
+import qualified Data.Set as Set
+import qualified Data.Multimap.Set as SetMultimap
+import Data.Multimap.Set (SetMultimap)
 import Data.Text (Text)
 import qualified Data.Text as T
 import Control.Monad
@@ -28,9 +31,34 @@ match sbom _cves debug = do
       Nothing -> putStrLn "No known deps?"
       Just s -> do
           let d = getDeps s
+          when debug $ putStrLn "Loading NVD CVEs"
           nvdCves <- loadNVDCVEs debug
-          foldM_ (getFromNVD nvdCves) ([] :: [Text]) d
+          when debug $ putStrLn "Indexing NVD CVEs"
+          let indexedCves = indexCves nvdCves
+          when debug $ putStrLn "Matching inventory dependencies to NVD CVEs"
+          mapM_ (getFromNVD indexedCves) d
+
     where
+      -- Index by CPE product name
+      indexCves :: [NVDCVE] -> SetMultimap Text (NVDCVE, CPEMatch)
+      indexCves cves =
+        let
+          conf_names :: NVDCVE -> Configuration -> [(Text, (NVDCVE, CPEMatch))]
+          conf_names cve conf =
+            let
+              cpematches :: [CPEMatch]
+              cpematches = concat $ map _node_cpeMatch $ _configuration_nodes conf
+            in
+              mapMaybe (\m -> case parseCPE $ _cpematch_criteria m of
+                      Just cpe -> Just (_cpe_product cpe, (cve, m))
+                      Nothing -> Nothing) cpematches
+          cve_names :: NVDCVE -> [(Text, (NVDCVE, CPEMatch))]
+          cve_names cve = case (_nvdcve_configurations cve) of
+            Just confs -> concat $ map (conf_names cve) confs
+            Nothing -> []
+        in
+          SetMultimap.fromList $ concat $ map cve_names cves
+
       getDeps :: [SBOMDependency] -> [InventoryDependency]
       getDeps d = let deps = map (_sbomdependency_ref) d
                       split :: Text -> InventoryDependency
@@ -48,59 +76,33 @@ match sbom _cves debug = do
                               (InventoryDependency pname version path)
                   in map split deps
 
-      getFromNVD :: [NVDCVE] -> [Text] -> InventoryDependency -> IO [Text]
-      getFromNVD resp acc (InventoryDependency pname version _drv) = do
-          case elem pname acc of
-            True -> pure acc
-            False -> do
+      getFromNVD :: SetMultimap Text (NVDCVE, CPEMatch) -> InventoryDependency -> IO ()
+      getFromNVD cves (InventoryDependency pname version _drv) = do
               f <- fileExist $ "/tmp/NVD-" <> T.unpack pname
               case f of
                 True -> do
                     putStrLn "Known Vulnerable before, skipping"
-                    pure $ acc <> [pname]
                 False -> do
                   when debug $ putStrLn "Running Keyword Search"
                   putStrLn $ T.unpack pname
-
-                  let configs = map (\x -> (_nvdcve_id x, _nvdcve_configurations x)) resp
-                      (versions :: [(Text, [CPEMatch])]) = flip map configs $ uncurry $ \cveId -> \case
-                        Nothing -> ("Fail", [])
-                        Just conf -> do
-                            let cpeMatch = (concat (map _node_cpeMatch (concat (map _configuration_nodes conf))))
-                            (cveId, cpeMatch)
-
-                      vulns = flip concatMap versions $ uncurry $ \cveId x' -> flip map x' $ \x -> do
-                        let nvdVer = _cpematch_versionEndIncluding x
-                            nvdCPE = (\c -> pname == _cpe_product c) <$> (parseCPE $ _cpematch_criteria x)
-                        case nvdCPE of
-                          (Just False) -> Nothing
-                          (Just True) -> case nvdVer of
-                            Nothing -> Nothing
-                            Just ver -> do
+                  let (matchedByName :: [(NVDCVE, CPEMatch)]) = Set.toList $ SetMultimap.lookup pname cves
+                      cpeMatches :: CPEMatch -> Bool
+                      cpeMatches x =
+                          case _cpematch_versionEndIncluding x of
+                            -- TODO this doesn't seem right
+                            Nothing -> False
+                            Just ver ->
                               let ver' = splitSemVer ver
                                   localver = splitSemVer <$> version
-                              case (ver', localver) of
-                                (Just v, Just (Just lv)) -> do
-                                    if _semver_major v >= _semver_major lv && _semver_minor v >= _semver_minor lv then
-                                        Just (cveId, lv, v)
-                                    else Nothing
-                                (_, _) -> Nothing
-                          _ -> Nothing
-
-                  flip mapM_ vulns $ \case
-                    Just (cveId, localver, _nvdver) -> do
-                        putStrLn $ T.unpack cveId
-                        putStrLn $ "VULN"
-                        putStrLn $ show localver
-                        --encodeFile ("/tmp/NVD-" <> T.unpack pname) $ LocalCache cveId pname (T.pack $ prettySemVer localver)
-                    Nothing -> pure ()
-                  pure $ acc <> [pname]
-
-
-
-
-
-
+                              in
+                                case (ver', localver) of
+                                  (Just v, Just (Just lv)) -> _semver_major v >= _semver_major lv && _semver_minor v >= _semver_minor lv
+                                  (_, _) -> False
+                      vulns = filter (\(_, m) -> cpeMatches m) matchedByName
+                  flip mapM_ vulns $ \(cve, _) -> do
+                    putStrLn $ T.unpack $ _nvdcve_id cve
+                    putStrLn $ "VULN"
+                    putStrLn $ show version
 
     {-match' :: SBOM -> [Advisory] -> IO ()
 match' sbom cves = do
