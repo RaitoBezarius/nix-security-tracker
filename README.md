@@ -9,8 +9,8 @@ get from `nixos-generate-config` with little further customization, against the
 revision of nixos-unstable described in the `flake.lock`.
 
 To reproduce the result in `out.txt`:
-* use version 99431855fc642116a5f3a9051e13ff8c96e544c3 of the tool
-* use version bfd53a882a15136e0feb8f4a561011e16a742fb0 of the CVE db
+* use version 31c3fd9f772d9cd5d788a2cb047e05f1f67c5baf of the tool
+* (CVE db is not currently versioned)
 * `nix build` this configuration
 * `sbomnix result/ --type runtime`
 * `CVENix /path/to/sbom.cdx.json`

@@ -1,53 +1,569 @@
-231460
-[CVE] Parsing 231460 files
-[CVE] Done parsing
-[CVE] Time to run: 23.805149634s
 Matched advisories:
-"avahi"	"/nix/store/08xh2gdj9ji94fcjpf2hpz42jim99kkp-avahi-0.8.drv"	"CVE-2023-38469"
-Nothing
+[Informational] [mLoading NVD data from cache[0m
+[Informational] [mCache last updated: 2023-11-30 20:48:51.777003324 UTC[0m
 
-"avahi"	"/nix/store/08xh2gdj9ji94fcjpf2hpz42jim99kkp-avahi-0.8.drv"	"CVE-2023-38470"
-Nothing
+[Warning] [93mavahi[0m
+[Warning] [93mCVE-2021-3468[0m
+[Warning] [93mMEDIUM[0m
+[Warning] [93mVulnerable version: 0.8[0m
+[Warning] [93mLocal Version: 0.8[0m
+[Warning] [93mFull drv path: /nix/store/d0mmdr28zjf2wfxyhr0j3flsvahxfdfi-avahi-0.8.drv[0m
 
-"avahi"	"/nix/store/08xh2gdj9ji94fcjpf2hpz42jim99kkp-avahi-0.8.drv"	"CVE-2023-38471"
-Nothing
 
-"avahi"	"/nix/store/08xh2gdj9ji94fcjpf2hpz42jim99kkp-avahi-0.8.drv"	"CVE-2023-38472"
-Nothing
+[Warning] [93mavahi[0m
+[Warning] [93mCVE-2021-26720[0m
+[Warning] [93mHIGH[0m
+[Warning] [93mVulnerable version: 0.8[0m
+[Warning] [93mLocal Version: 0.8[0m
+[Warning] [93mFull drv path: /nix/store/d0mmdr28zjf2wfxyhr0j3flsvahxfdfi-avahi-0.8.drv[0m
 
-"avahi"	"/nix/store/08xh2gdj9ji94fcjpf2hpz42jim99kkp-avahi-0.8.drv"	"CVE-2023-38473"
-Nothing
 
-"gawk"	"/nix/store/jzc31i1d1mi6x2rmp9pj6dcvw2mx7daz-gawk-5.2.2.drv"	"CVE-2023-3164"
-Just [VersionData {_versiondata_semver = "5.1.1", _versiondata_vuln = Just "exactly", _versiondata_status = "unaffected"}]
+[Warning] [93mbinutils[0m
+[Warning] [93mCVE-2023-1972[0m
+[Warning] [93mMEDIUM[0m
+[Warning] [93mVulnerable version: 2.40[0m
+[Warning] [93mLocal Version: 2.40[0m
+[Warning] [93mFull drv path: /nix/store/6sb5sjn8rplcwhgvq1jxhkd9zz5848n0-binutils-2.40.drv[0m
 
-"gawk"	"/nix/store/jzc31i1d1mi6x2rmp9pj6dcvw2mx7daz-gawk-5.2.2.drv"	"CVE-2023-4156"
-Just [VersionData {_versiondata_semver = "5.1.1", _versiondata_vuln = Just "exactly", _versiondata_status = "unaffected"}]
 
-"glib"	"/nix/store/09yqd7yg7rfjsfbikvc3snx7wn9c6is5-glib-2.76.4.drv"	"CVE-2023-29499"
-Nothing
+[Warning] [93mdjvulibre[0m
+[Warning] [93mCVE-2021-32490[0m
+[Warning] [93mHIGH[0m
+[Warning] [93mVulnerable version: 3.5.28[0m
+[Warning] [93mLocal Version: 3.5.28[0m
+[Warning] [93mFull drv path: /nix/store/1dl8361lk6sb0vsiwf4myqmrkmxla4dm-djvulibre-3.5.28.drv[0m
 
-"glib"	"/nix/store/09yqd7yg7rfjsfbikvc3snx7wn9c6is5-glib-2.76.4.drv"	"CVE-2023-32611"
-Nothing
 
-"glib"	"/nix/store/09yqd7yg7rfjsfbikvc3snx7wn9c6is5-glib-2.76.4.drv"	"CVE-2023-32665"
-Nothing
+[Warning] [93mdjvulibre[0m
+[Warning] [93mCVE-2021-32491[0m
+[Warning] [93mHIGH[0m
+[Warning] [93mVulnerable version: 3.5.28[0m
+[Warning] [93mLocal Version: 3.5.28[0m
+[Warning] [93mFull drv path: /nix/store/1dl8361lk6sb0vsiwf4myqmrkmxla4dm-djvulibre-3.5.28.drv[0m
 
-"libtiff"	"/nix/store/c80az5882p200wyi9vk5jkbrqf8wi2q1-libtiff-4.6.0.drv"	"CVE-2023-2908"
-Just [VersionData {_versiondata_semver = "4.5.1rc1", _versiondata_vuln = Just "exactly", _versiondata_status = "unaffected"}]
 
-"libtiff"	"/nix/store/c80az5882p200wyi9vk5jkbrqf8wi2q1-libtiff-4.6.0.drv"	"CVE-2023-3576"
-Just [VersionData {_versiondata_semver = "0:4.4.0-10.el9", _versiondata_vuln = Just "lessThan *", _versiondata_status = "unaffected"}]
+[Warning] [93mdjvulibre[0m
+[Warning] [93mCVE-2021-32492[0m
+[Warning] [93mHIGH[0m
+[Warning] [93mVulnerable version: 3.5.28[0m
+[Warning] [93mLocal Version: 3.5.28[0m
+[Warning] [93mFull drv path: /nix/store/1dl8361lk6sb0vsiwf4myqmrkmxla4dm-djvulibre-3.5.28.drv[0m
 
-"libtiff"	"/nix/store/c80az5882p200wyi9vk5jkbrqf8wi2q1-libtiff-4.6.0.drv"	"CVE-2023-3576"
-Just [VersionData {_versiondata_semver = "4.5.1", _versiondata_vuln = Just "exactly", _versiondata_status = "unaffected"}]
 
-"libtiff"	"/nix/store/c80az5882p200wyi9vk5jkbrqf8wi2q1-libtiff-4.6.0.drv"	"CVE-2023-3618"
-Nothing
+[Warning] [93mdjvulibre[0m
+[Warning] [93mCVE-2021-32493[0m
+[Warning] [93mHIGH[0m
+[Warning] [93mVulnerable version: 3.5.28[0m
+[Warning] [93mLocal Version: 3.5.28[0m
+[Warning] [93mFull drv path: /nix/store/1dl8361lk6sb0vsiwf4myqmrkmxla4dm-djvulibre-3.5.28.drv[0m
 
-"w3m"	"/nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv"	"CVE-2023-38252"
-Nothing
 
-"w3m"	"/nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv"	"CVE-2023-38253"
-Nothing
+[Warning] [93mdjvulibre[0m
+[Warning] [93mCVE-2021-3500[0m
+[Warning] [93mHIGH[0m
+[Warning] [93mVulnerable version: 3.5.28[0m
+[Warning] [93mLocal Version: 3.5.28[0m
+[Warning] [93mFull drv path: /nix/store/1dl8361lk6sb0vsiwf4myqmrkmxla4dm-djvulibre-3.5.28.drv[0m
+
+
+[Warning] [93med[0m
+[Warning] [93mCVE-2015-2987[0m
+[Warning] [93mVulnerable version: 3.4[0m
+[Warning] [93mLocal Version: 1.19[0m
+[Warning] [93mFull drv path: /nix/store/srj49fkrbdhjg7qq8akms5204782zwbc-ed-1.19.drv[0m
+
+
+[Warning] [93mflex[0m
+[Warning] [93mCVE-2015-1773[0m
+[Warning] [93mVulnerable version: 4.14.0[0m
+[Warning] [93mLocal Version: 2.6.4[0m
+[Warning] [93mFull drv path: /nix/store/ix9v9lg9d2qyxhflcbakvmz9jm8qr57a-flex-2.6.4.drv[0m
+
+
+[Warning] [93mgit[0m
+[Warning] [93mCVE-2022-38663[0m
+[Warning] [93mMEDIUM[0m
+[Warning] [93mVulnerable version: 4.11.4[0m
+[Warning] [93mLocal Version: 2.42.0[0m
+[Warning] [93mFull drv path: /nix/store/8909qqpbgrg3r0vxrr0ijygxjwgb9zax-git-2.42.0.drv[0m
+
+
+[Warning] [93mgit[0m
+[Warning] [93mCVE-2022-36882[0m
+[Warning] [93mHIGH[0m
+[Warning] [93mVulnerable version: 4.11.3[0m
+[Warning] [93mLocal Version: 2.42.0[0m
+[Warning] [93mFull drv path: /nix/store/8909qqpbgrg3r0vxrr0ijygxjwgb9zax-git-2.42.0.drv[0m
+
+
+[Warning] [93mgit[0m
+[Warning] [93mCVE-2022-36883[0m
+[Warning] [93mHIGH[0m
+[Warning] [93mVulnerable version: 4.11.3[0m
+[Warning] [93mLocal Version: 2.42.0[0m
+[Warning] [93mFull drv path: /nix/store/8909qqpbgrg3r0vxrr0ijygxjwgb9zax-git-2.42.0.drv[0m
+
+
+[Warning] [93mgit[0m
+[Warning] [93mCVE-2022-36884[0m
+[Warning] [93mMEDIUM[0m
+[Warning] [93mVulnerable version: 4.11.3[0m
+[Warning] [93mLocal Version: 2.42.0[0m
+[Warning] [93mFull drv path: /nix/store/8909qqpbgrg3r0vxrr0ijygxjwgb9zax-git-2.42.0.drv[0m
+
+
+[Warning] [93mgit[0m
+[Warning] [93mCVE-2022-30947[0m
+[Warning] [93mHIGH[0m
+[Warning] [93mVulnerable version: 4.11.1[0m
+[Warning] [93mLocal Version: 2.42.0[0m
+[Warning] [93mFull drv path: /nix/store/8909qqpbgrg3r0vxrr0ijygxjwgb9zax-git-2.42.0.drv[0m
+
+
+[Warning] [93mgit[0m
+[Warning] [93mCVE-2022-30949[0m
+[Warning] [93mMEDIUM[0m
+[Warning] [93mVulnerable version: 4.11.1[0m
+[Warning] [93mLocal Version: 2.42.0[0m
+[Warning] [93mFull drv path: /nix/store/8909qqpbgrg3r0vxrr0ijygxjwgb9zax-git-2.42.0.drv[0m
+
+
+[Warning] [93mgit[0m
+[Warning] [93mCVE-2021-21684[0m
+[Warning] [93mMEDIUM[0m
+[Warning] [93mVulnerable version: 4.8.2[0m
+[Warning] [93mLocal Version: 2.42.0[0m
+[Warning] [93mFull drv path: /nix/store/8909qqpbgrg3r0vxrr0ijygxjwgb9zax-git-2.42.0.drv[0m
+
+
+[Warning] [93mgit[0m
+[Warning] [93mCVE-2020-2136[0m
+[Warning] [93mMEDIUM[0m
+[Warning] [93mVulnerable version: 4.2.0[0m
+[Warning] [93mLocal Version: 2.42.0[0m
+[Warning] [93mFull drv path: /nix/store/8909qqpbgrg3r0vxrr0ijygxjwgb9zax-git-2.42.0.drv[0m
+
+
+[Warning] [93mgit[0m
+[Warning] [93mCVE-2019-1003010[0m
+[Warning] [93mVulnerable version: 3.9.1[0m
+[Warning] [93mLocal Version: 2.42.0[0m
+[Warning] [93mFull drv path: /nix/store/8909qqpbgrg3r0vxrr0ijygxjwgb9zax-git-2.42.0.drv[0m
+
+
+[Warning] [93mgit[0m
+[Warning] [93mCVE-2018-1000182[0m
+[Warning] [93mVulnerable version: 3.9.0[0m
+[Warning] [93mLocal Version: 2.42.0[0m
+[Warning] [93mFull drv path: /nix/store/8909qqpbgrg3r0vxrr0ijygxjwgb9zax-git-2.42.0.drv[0m
+
+
+[Warning] [93mgit[0m
+[Warning] [93mCVE-2018-1000110[0m
+[Warning] [93mVulnerable version: 3.7.0[0m
+[Warning] [93mLocal Version: 2.42.0[0m
+[Warning] [93mFull drv path: /nix/store/8909qqpbgrg3r0vxrr0ijygxjwgb9zax-git-2.42.0.drv[0m
+
+
+[Warning] [93mlibid3tag[0m
+[Warning] [93mCVE-2004-2779[0m
+[Warning] [93mVulnerable version: 0.15.1[0m
+[Warning] [93mLocal Version: 0.15.1[0m
+[Warning] [93mFull drv path: /nix/store/iq7p1c78yzffmvnvjc69z53r6hcfaaa4-libid3tag-0.15.1b.drv[0m
+
+
+[Warning] [93mlibmad[0m
+[Warning] [93mCVE-2018-7263[0m
+[Warning] [93mVulnerable version: 0.15.1[0m
+[Warning] [93mLocal Version: 0.15.1[0m
+[Warning] [93mFull drv path: /nix/store/6yi67j43m2z0iysdji9n1zgwsqwfpdc3-libmad-0.15.1b.drv[0m
+
+
+[Warning] [93mlibxml2[0m
+[Warning] [93mCVE-2023-45322[0m
+[Warning] [93mMEDIUM[0m
+[Warning] [93mVulnerable version: 2.11.5[0m
+[Warning] [93mLocal Version: 2.11.5[0m
+[Warning] [93mFull drv path: /nix/store/c1vfncyi03yq2jd1rd6q9bx5x2xlgimx-libxml2-2.11.5.drv[0m
+
+
+[Warning] [93mlinux[0m
+[Warning] [93mCVE-2001-0886[0m
+[Warning] [93mVulnerable version: 7.2[0m
+[Warning] [93mLocal Version: 6.6.2[0m
+[Warning] [93mFull drv path: /nix/store/d2bbm13h3c3lk0v9slgi9fvzcxjcqslk-linux-6.6.2.drv[0m
+
+
+[Warning] [93mlua[0m
+[Warning] [93mCVE-2022-33099[0m
+[Warning] [93mHIGH[0m
+[Warning] [93mVulnerable version: 5.4.4[0m
+[Warning] [93mLocal Version: 5.2.4[0m
+[Warning] [93mFull drv path: /nix/store/5mn45bh8zj32j8f3pw13abggj8dsd7cq-lua-5.2.4.drv[0m
+
+
+[Warning] [93mlua[0m
+[Warning] [93mCVE-2022-28805[0m
+[Warning] [93mCRITICAL[0m
+[Warning] [93mVulnerable version: 5.4.4[0m
+[Warning] [93mLocal Version: 5.2.4[0m
+[Warning] [93mFull drv path: /nix/store/5mn45bh8zj32j8f3pw13abggj8dsd7cq-lua-5.2.4.drv[0m
+
+
+[Warning] [93mopusfile[0m
+[Warning] [93mCVE-2022-47021[0m
+[Warning] [93mHIGH[0m
+[Warning] [93mVulnerable version: 0.12[0m
+[Warning] [93mLocal Version: 0.12[0m
+[Warning] [93mFull drv path: /nix/store/18lzd5qrlq77qmn2q0kppqndginja1db-opusfile-0.12.drv[0m
+
+
+[Warning] [93morc[0m
+[Warning] [93mCVE-2018-8015[0m
+[Warning] [93mVulnerable version: 1.4.3[0m
+[Warning] [93mLocal Version: 0.4.34[0m
+[Warning] [93mFull drv path: /nix/store/ly98ak4d2nnmzq08niyj6q72kfdj5c2c-orc-0.4.34.drv[0m
+
+
+[Warning] [93mpatch[0m
+[Warning] [93mCVE-2019-20633[0m
+[Warning] [93mMEDIUM[0m
+[Warning] [93mVulnerable version: 2.7.6[0m
+[Warning] [93mLocal Version: 2.7.6[0m
+[Warning] [93mFull drv path: /nix/store/amsz2h7xz55nckz10hnzay8nmaigxznv-patch-2.7.6.drv[0m
+
+
+[Warning] [93mpatch[0m
+[Warning] [93mCVE-2018-20969[0m
+[Warning] [93mVulnerable version: 2.7.6[0m
+[Warning] [93mLocal Version: 2.7.6[0m
+[Warning] [93mFull drv path: /nix/store/amsz2h7xz55nckz10hnzay8nmaigxznv-patch-2.7.6.drv[0m
+
+
+[Warning] [93mpatch[0m
+[Warning] [93mCVE-2019-13636[0m
+[Warning] [93mVulnerable version: 2.7.6[0m
+[Warning] [93mLocal Version: 2.7.6[0m
+[Warning] [93mFull drv path: /nix/store/amsz2h7xz55nckz10hnzay8nmaigxznv-patch-2.7.6.drv[0m
+
+
+[Warning] [93mpatch[0m
+[Warning] [93mCVE-2018-6951[0m
+[Warning] [93mVulnerable version: 2.7.6[0m
+[Warning] [93mLocal Version: 2.7.6[0m
+[Warning] [93mFull drv path: /nix/store/amsz2h7xz55nckz10hnzay8nmaigxznv-patch-2.7.6.drv[0m
+
+
+[Warning] [93mpatch[0m
+[Warning] [93mCVE-2018-6952[0m
+[Warning] [93mVulnerable version: 2.7.6[0m
+[Warning] [93mLocal Version: 2.7.6[0m
+[Warning] [93mFull drv path: /nix/store/amsz2h7xz55nckz10hnzay8nmaigxznv-patch-2.7.6.drv[0m
+
+
+[Warning] [93mprocps[0m
+[Warning] [93mCVE-2023-4016[0m
+[Warning] [93mMEDIUM[0m
+[Warning] [93mVulnerable version: 4.0.3[0m
+[Warning] [93mLocal Version: 3.3.17[0m
+[Warning] [93mFull drv path: /nix/store/knbh0rbfd298h2848f55mdzznrrk92pi-procps-3.3.17.drv[0m
+
+
+[Warning] [93mqtsvg[0m
+[Warning] [93mCVE-2021-45930[0m
+[Warning] [93mMEDIUM[0m
+[Warning] [93mVulnerable version: 6.2.1[0m
+[Warning] [93mLocal Version: 5.15.11[0m
+[Warning] [93mFull drv path: /nix/store/dbrm6k53xzyigjplrrgxhlqy0dvwz45k-qtsvg-5.15.11.drv[0m
+
+
+[Warning] [93munzip[0m
+[Warning] [93mCVE-2014-8139[0m
+[Warning] [93mHIGH[0m
+[Warning] [93mVulnerable version: 6.0[0m
+[Warning] [93mLocal Version: 6.0[0m
+[Warning] [93mFull drv path: /nix/store/7v44xpzhfk69mn2pj0wdy3zqjl1ky79z-unzip-6.0.drv[0m
+
+
+[Warning] [93munzip[0m
+[Warning] [93mCVE-2014-8140[0m
+[Warning] [93mHIGH[0m
+[Warning] [93mVulnerable version: 6.0[0m
+[Warning] [93mLocal Version: 6.0[0m
+[Warning] [93mFull drv path: /nix/store/7v44xpzhfk69mn2pj0wdy3zqjl1ky79z-unzip-6.0.drv[0m
+
+
+[Warning] [93munzip[0m
+[Warning] [93mCVE-2014-8141[0m
+[Warning] [93mHIGH[0m
+[Warning] [93mVulnerable version: 6.0[0m
+[Warning] [93mLocal Version: 6.0[0m
+[Warning] [93mFull drv path: /nix/store/7v44xpzhfk69mn2pj0wdy3zqjl1ky79z-unzip-6.0.drv[0m
+
+
+[Warning] [93munzip[0m
+[Warning] [93mCVE-2018-1000035[0m
+[Warning] [93mVulnerable version: 6.0[0m
+[Warning] [93mLocal Version: 6.0[0m
+[Warning] [93mFull drv path: /nix/store/7v44xpzhfk69mn2pj0wdy3zqjl1ky79z-unzip-6.0.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2018-6196[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2018-6197[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2018-6198[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9422[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9423[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9424[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9425[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9426[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9428[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9429[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9430[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9431[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9432[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9433[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9434[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9437[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9438[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9439[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9440[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9441[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9442[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9443[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9622[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9623[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9624[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9625[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9626[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9627[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9628[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9629[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9630[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9631[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9632[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9633[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9435[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mw3m[0m
+[Warning] [93mCVE-2016-9436[0m
+[Warning] [93mVulnerable version: 0.5.3[0m
+[Warning] [93mLocal Version: 0.5.3[0m
+[Warning] [93mFull drv path: /nix/store/0v1i0bx7ld6lh0g9kkykc08in4y9612w-w3m-0.5.3+git20230121.drv[0m
+
+
+[Warning] [93mzlib[0m
+[Warning] [93mCVE-2023-45853[0m
+[Warning] [93mCRITICAL[0m
+[Warning] [93mVulnerable version: 1.3[0m
+[Warning] [93mLocal Version: 1.3[0m
+[Warning] [93mFull drv path: /nix/store/s0x9isga3zazydkrqhkqly010dwp484i-zlib-1.3.drv[0m
 
