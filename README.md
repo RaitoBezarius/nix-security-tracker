@@ -9,8 +9,7 @@ get from `nixos-generate-config` with little further customization, against the
 revision of nixos-unstable described in the `flake.lock`.
 
 To reproduce the result in `out.txt`:
-* use version 44f3a2670dccec7e973f858a349068bd96d429ae of the tool
+* use version 424de04b1021a5d06af723aa0388b1bd3f30775e of the tool
 * (CVE db is not currently versioned)
-* `nix build` this configuration
-* `sbomnix result/ --type runtime`
-* `CVENix /path/to/sbom.cdx.json`
+* `nix build .#nixosConfigurations.testSystem.config.system.build.toplevel` this configuration
+* `LocalSecurityScanner --path runtime/ > out.txt`
